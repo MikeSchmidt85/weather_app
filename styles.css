@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;200;400;700&family=Rubik+Wet+Paint&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2VhJTIwYmVhY2h8ZW58MHx8MHx8&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container{
+    padding: 20px 70px;
+    color: purple;
+}
+
+.current_info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date_container{
+    font-weight: 100;
+}
+
+.date_container .time{
+    font-size: 70px;
+
+}
+
+.date_container #am_pm{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.date_container .date{
+    font-size: 30px;
+}
+
+.country{
+    text-align: end;
+}
+
+.place_container .time_zone{
+    font-size: 30px;
+    font-weight: 100;
+
+}
+
+.place_container .country{
+    font-size: 12px;
+    font-weight: 1000;
+    
+}
+
+.current_info .others{
+    display: flex;
+    flex-direction: column;
+}
+
+.current-info .others .weather_item{
+    display: flex;
+    justify-content: space-between;
+
+}
