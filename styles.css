@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;200;400;700&family=Rubik+Wet+Paint&display=swap');
-
 *{
     box-sizing:border-box;
     margin: 0;
@@ -17,7 +15,7 @@ body{
 
 .container{
     padding: 20px 70px;
-    color: purple;
+    color: white;
 }
 
 .current_info{
@@ -63,10 +61,99 @@ body{
 .current_info .others{
     display: flex;
     flex-direction: column;
+    background: rgba(24,24,27, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
 }
 
-.current-info .others .weather_item{
+.current_info .others .weather_item{
     display: flex;
     justify-content: space-between;
+}
 
+.future_forecast{
+    background:rgba(24, 24, 27, 0.8);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.future_forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.future_forecast .today .day{
+    padding: 5px 15px;
+    background-color: green;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future_forecast .today .temp{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.future_forecast .weather_forecast{
+    display: flex;
+    padding: 20px;
+
+}
+
+.weather_forecast .weather_forecast_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border-radius: 1px solid white;
+}
+
+.day{
+    padding: 5px 15px;
+    background-color: green;
+    border-radius: 50px;
+    text-align: center;
+}
+.weather_forecast{
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 15px;
+}
+
+.today{
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10%;
+    margin: 15px;
+    padding: 10px;
+}
+
+@media only screen and (max-width:730px){
+    .future_forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .future_forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
 }
