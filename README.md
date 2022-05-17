@@ -5,13 +5,16 @@
 <p align="center"> Also lets you know what the weather looks like the next week.</p>
 <p align="center"> Avaliable in both Desktop and Mobile.</p>
 
+<hr/>
+
 <h3>Built with:</h3>
 <p>
           HTML <br/>
           CSS <br/>
           JavaScript <br/>
 </p>
-          
+
+<hr/>          
 
 <h3>Screen Shots</h3>
 
